@@ -1,0 +1,16 @@
+exch(nasdaq, nyse)
+and cap > 15000
+and price > 20
+and revenue_5y_growth > 5
+and net_income_5y_growth > 7
+and free_cash_flow_5y_growth > 7
+and price_sales_ratio < 30
+and show((max(price_sales_ratio, 36)@monthly + min(price_sales_ratio, 36)@monthly) / 2)
+
+// can select just one
+and show(revenue_5y_growth)
+and show(net_income_5y_growth)
+and show(free_cash_flow_5y_growth)
+
+
+pge - obowiazjowy
