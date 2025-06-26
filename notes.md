@@ -21,8 +21,6 @@ and lowest(20) / lowest(20)@40 <= (1 + (0.2 * range(60)/100)) and lowest(20) / l
 and lowest(20) / lowest(20)@60 <= (1 + (0.2 * range(60)/100)) and lowest(20) / lowest(20)@60 >= (1 - (0.2 * range(60)/100))
 and hist(06/24/2025)
 
-
-
 exch(nyse, nasdaq) 
 and cap > 1000
 and range(60) <= 20
@@ -36,28 +34,12 @@ and hist(06/24/2024)
 stopat(lowest(60))
 and takeat(highest(60) + (highest(60) - lowest(60)))
 
-Dow
-SP500
-NYSE Composite
-Nasdaq Composite
-Nasdaq 100
-Russell 1000
-Russell 2000
-Russell 3000
-Russell Midcap
-Russell Microcap
-TSX
-FTSE 100
-FTSE 250
-FTSE All Share
-DAX
-ASX 50
-ASX 200
-ASX All Ords
-Hang Seng
-Straits Times
-KLCI
-Nifty 50
-Nifty Next 50
-Nifty 200
-Nifty 500
+TODO:
+rsi2 more tickers, futures
+interactive brokers secondary account / isolated
+interactive brokers alarms, execute order on alarm
+IB pass money
+
+
+
+qcom
