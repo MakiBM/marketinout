@@ -34,12 +34,12 @@ and hist(06/24/2024)
 stopat(lowest(60))
 and takeat(highest(60) + (highest(60) - lowest(60)))
 
-TODO:
-rsi2 more tickers, futures
-interactive brokers secondary account / isolated
-interactive brokers alarms, execute order on alarm
-IB pass money
 
-
-
-qcom
+exch(nyse, nasdaq) 
+and cap > 5000
+and range(30)@1 <= 10
+and range(10)@1 >= range(30)@1 * 0.5
+and range(10)@10 >= range(30)@1 * 0.5
+and range(10)@20 >= range(30)@1 * 0.5
+and open <  highest(30)@1
+and close > (highest(30)@1 * (1 + range(30)@1 / 100 * 0.5))
